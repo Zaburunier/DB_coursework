@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2B9C4AF-4FAB-43E0-88B5-9AF9ADB8B7DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KRBD</RootNamespace>
+    <AssemblyName>KRBD</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChecksReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChecksReport.Designer.cs">
+      <DependentUpon>ChecksReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControllerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControllerForm.Designer.cs">
+      <DependentUpon>ControllerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_table.Designer.cs">
+      <DependentUpon>Customer_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyReport.Designer.cs">
+      <DependentUpon>DailyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Director.Designer.cs">
+      <DependentUpon>Director.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DishCompReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DishCompReport.Designer.cs">
+      <DependentUpon>DishCompReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dish_Structure_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dish_Structure_table.Designer.cs">
+      <DependentUpon>Dish_Structure_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dish_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dish_table.Designer.cs">
+      <DependentUpon>Dish_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_table.Designer.cs">
+      <DependentUpon>Employee_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnterForm.Designer.cs">
+      <DependentUpon>EnterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KRBD_RestarauntDataSet.cs">
+      <DependentUpon>KRBD_RestarauntDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KRBD_RestarauntDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KRBD_RestarauntDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Orders_select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orders_select.Designer.cs">
+      <DependentUpon>Orders_select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Orders_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orders_table.Designer.cs">
+      <DependentUpon>Orders_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Providers_table.Designer.cs">
+      <DependentUpon>Providers_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Refill_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Refill_table.Designer.cs">
+      <DependentUpon>Refill_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supply_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply_table.Designer.cs">
+      <DependentUpon>Supply_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaiterChefForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaiterChefForm.Designer.cs">
+      <DependentUpon>WaiterChefForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChecksReport.resx">
+      <DependentUpon>ChecksReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControllerForm.resx">
+      <DependentUpon>ControllerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_table.resx">
+      <DependentUpon>Customer_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyReport.resx">
+      <DependentUpon>DailyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director.resx">
+      <DependentUpon>Director.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DishCompReport.resx">
+      <DependentUpon>DishCompReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dish_Structure_table.resx">
+      <DependentUpon>Dish_Structure_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dish_table.resx">
+      <DependentUpon>Dish_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_table.resx">
+      <DependentUpon>Employee_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterForm.resx">
+      <DependentUpon>EnterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders_select.resx">
+      <DependentUpon>Orders_select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders_table.resx">
+      <DependentUpon>Orders_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Providers_table.resx">
+      <DependentUpon>Providers_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Refill_table.resx">
+      <DependentUpon>Refill_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply_table.resx">
+      <DependentUpon>Supply_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaiterChefForm.resx">
+      <DependentUpon>WaiterChefForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="KRBD_RestarauntDataSet.xsc">
+      <DependentUpon>KRBD_RestarauntDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KRBD_RestarauntDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KRBD_RestarauntDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KRBD_RestarauntDataSet.xss">
+      <DependentUpon>KRBD_RestarauntDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
